@@ -5,6 +5,7 @@ const firstScriptTag = document.getElementsByTagName('script')[0];
 let player;
 let keyName;
 const hero = document.querySelector(".hero");
+const video = document.getElementsByTagName("iframe")[0];
 
       tag.src = "https://www.youtube.com/iframe_api";
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
@@ -57,11 +58,13 @@ const hero = document.querySelector(".hero");
       hero.style.animationName = "play";
       hero.classList.remove("hero_back");
       hero.classList.add("hero");
+      document.getElementsByTagName("iframe")[0].style.transform = "rotateY(0deg)";
     } else if (key==="d" || key === "ArrowRight" || key==="D") {
       playVideo();
       hero.style.animationName = "playBack";
       hero.classList.remove("hero");
       hero.classList.add("hero_back");
+      document.getElementsByTagName("iframe")[0].style.transform = "rotateY(180deg)";
     }
   }
 
