@@ -39,19 +39,19 @@ const hero = document.querySelector(".hero");
       }
 
 // The API will call this function when the video player is ready and prevent from continual loading or autoplay.
-      function onPlayerReady(event) {
+      const onPlayerReady = (event) => {
         event.target.pauseVideo();
       }
-      function pauseVideo() {
+      const pauseVideo = () => {
         hero.style.animationPlayState = "paused";
         player.pauseVideo();
       }
-      function playVideo() {
+      const playVideo = () => {
         hero.style.animationPlayState = "running";
         player.playVideo();
       }
 
-  function move_hero(key) {
+  const move_hero = (key) => {
     if (key==="a" || key==="ArrowLeft" || key==="A") {
       playVideo();
       hero.style.animationName = "play";
