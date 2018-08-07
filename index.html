@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="all" />
+  <title>Liki Code Test</title>
+</head>
+<body>
+  <section>
+    <h1>Welcome to the recruitment game :)</h1>
+    <button>START</button>
+  </section>
+  <div id="overlay"></div>
+  <script>
+    let button = document.getElementsByTagName('button');
+    button[0].addEventListener('click', function() {
+      document.location.href = 'game/index.html'
+    });
+  </script>
+</body>
+</html>

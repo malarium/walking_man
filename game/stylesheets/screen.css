@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -99;
+}
+
+@keyframes play {
+	100% { background-position: -2252px;}
+}
+
+@keyframes playBack {
+	100% { background-position: 2252px;}
+}
+
+#hero_wrapper {
+  position: relative;
+  width: 400px;
+  background-color: green;
+}
+
+.hero,
+.hero_back {
+  overflow: hidden;
+  position: absolute;
+  left: 40vw;
+  bottom: 15vh;
+  width: calc(2252px/8);
+  height: 346px;
+  animation: .7s steps(8) infinite;
+}
+
+.hero {
+  background: url('../assets/tile00.png') 0 50%;
+}
+
+.hero_back {
+  background: url('../assets/tile01.png') 0 50%;
+}
