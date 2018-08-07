@@ -5,7 +5,6 @@ const firstScriptTag = document.getElementsByTagName('script')[0];
 let player;
 let keyName;
 const hero = document.querySelector(".hero");
-const video = document.getElementsByTagName("iframe")[0];
 
       tag.src = "https://www.youtube.com/iframe_api";
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
